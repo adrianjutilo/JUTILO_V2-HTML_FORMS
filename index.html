@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHECK OUT</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="dropdown">
+        <button class="dropdown-toggle">
+        <span>Menu</span>
+        <i class="fa-solid fa-caret-down"></i>
+    </button>
+    <ul class="menu">
+        <li class="menu-item"><a href="#">Italian</a></li>
+        <li class="menu-item"><a href="#">Chinese</a></li>
+        <li class="menu-item dropdown">
+            <a href="#" class="submenu-toggle">
+            <span>Healthy Options</span>
+            <i class="fa-solid fa-caret-right"></i>
+    </a>
+    <ul class="submenu">
+        <li class="submenu-item"><a href="#">Vegetarian</a></li>
+    </ul>
+    </li>
+        <li class="menu-item"><a href="#">Mexican</a></li>
+        <li class="menu-item dropdown">
+    <a href="#" class="submenu-toggle">
+        <span>Specials</span>
+        <i class="fa-solid fa-caret-right"></i>
+    </a>
+    <ul class="submenu">
+            </ul>
+            </li>
+    </ul>
+    </div>
+
+    <div class="form-container">
+        <h1>CHECKOUT</h1>
+        <h2>ENTER YOUR INFORMATION</h2>
+
+        <div class="basic-info">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+
+        <div class="dropdown">
+            <label for="cuisine">Type of Cuisine:</label>
+            <select id="cuisine" name="cuisine">
+                <option value="italian">Italian</option>
+                <option value="chinese">Chinese</option>
+            </select>
+        </div>
+
+        <div class="mode-of-payment">
+            <label for="payment">Mode of Payment: CREDIT CARD OR PAYPAL</label>
+            <label for="payment-dine-in">Dine-in</label>
+            <input type="radio" id="payment-dine-in" name="payment" value="dine-in">
+            <label for="payment-take-out">Take-out</label>
+            <input type="radio" id="payment-take-out" name="payment" value="take-out">
+        </div>
+
+        <div class="comments">
+            <label for="comments">Comments/Instruction:</label>
+            <textarea id="comments" name="comments"></textarea>
+        </div>
+
+        <div class="buttons">
+            <button id="order-placed">Place the Order</button>
+            <button id="cancel">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
